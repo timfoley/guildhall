@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>GA | The Guildhall</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <header>
+          <h1>Welcome to the Guildhall</h1>
+          <nav>
+
+          </nav>
+        </header>
+
+        <div class="content guild-profiles">
+        </div>
+
+        <script id="guilds-template" type="text/x-handlebars-template">
+          {{#each guild}}
+            <div class="guild">
+              <h2 class="name">{{this.name}}</h2>
+              <p><strong>Schedule:</strong> {{this.schedule}}</p>
+              <p><strong>Captains:</strong> <a href="mailto:{{this.captain1contact}}">{{this.captain1}}</a> <a href="mailto:{{this.captain2contact}}">{{this.captain2}}</a> <a href="mailto:{{this.captain3contact}}">{{this.captain3}}</a> </p>
+              <p>{{this.description}}</p>
+            </div>
+          {{/each}}
+        </script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/tabletop.js"></script>
+        <script src="js/handlebars-v3.0.3.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
