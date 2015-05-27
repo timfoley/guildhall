@@ -2,10 +2,10 @@
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ZBKNxsXDaNGrP63jYHISp3ckbsxvV0SUwD8VNbllVC4/pubhtml';
 
 var tabletop = Tabletop.init({
-  key: "https://docs.google.com/spreadsheets/d/1ZBKNxsXDaNGrP63jYHISp3ckbsxvV0SUwD8VNbllVC4/pubhtml",
-  callback: sheetLoad,
-  simpleSheet: false
-})
+    key: "https://docs.google.com/spreadsheets/d/1ZBKNxsXDaNGrP63jYHISp3ckbsxvV0SUwD8VNbllVC4/pubhtml",
+    callback: sheetLoad,
+    simpleSheet: false,
+  })
 
 
 
@@ -25,3 +25,22 @@ function render( context ){
 
 
 // render(tabletop.data().Details.all());
+// render(tabletop.data().js2meetings.all())
+// render(tabletop.data().datMeetings.all()) -- This would work, but the spreadsheet is empty
+
+// $(document).ready( function() {
+//   Tabletop.init( { key: public_spreadsheet_url,
+//                    callback: showInfo,
+//                    debug: true
+//                    } );
+// });
+//
+// function showInfo(data, tabletop) {
+//   console.log('ANyTHING!');
+//   var source   = $("#guilds-template").html();
+//   var template = Handlebars.compile(source);
+//
+//   $.each( tabletop.sheets("Details").all(), function(i, guild) {
+//     var html = template(guild);
+//     $(".guild-profiles").append(html);
+//  
