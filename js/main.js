@@ -25,3 +25,21 @@ function render( context ){
 
 
 // render(tabletop.data().Details.all());
+
+// $(document).ready( function() {
+//   Tabletop.init( { key: public_spreadsheet_url,
+//                    callback: showInfo,
+//                    debug: true
+//                    } );
+// });
+//
+// function showInfo(data, tabletop) {
+//   console.log('ANyTHING!');
+//   var source   = $("#guilds-template").html();
+//   var template = Handlebars.compile(source);
+//
+//   $.each( tabletop.sheets("Details").all(), function(i, guild) {
+//     var html = template(guild);
+//     $(".guild-profiles").append(html);
+//   });
+// }
