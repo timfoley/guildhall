@@ -24,4 +24,4 @@ function render( context ){
 }
 
 
-render(tabletop.data().Details.all());
+// render(tabletop.data().Details.all());
