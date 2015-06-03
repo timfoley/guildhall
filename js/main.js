@@ -10,9 +10,10 @@ var tabletop = Tabletop.init({
 
 
 function sheetLoad( data, tabletop ){
-  render( data )
   console.log( data )
+  console.log(tabletop.data())
   console.log('something')
+  render(data.Details.all())
 }
 
 
@@ -24,7 +25,7 @@ function render( context ){
 }
 
 
-// render(tabletop.data().Details.all());
+
 
 // $(document).ready( function() {
 //   Tabletop.init( { key: public_spreadsheet_url,
