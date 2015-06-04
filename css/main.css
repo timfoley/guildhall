@@ -94,11 +94,33 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header {
+  padding: 20px;
+}
 
+.guild-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-top: 0;
+}
 
+.guild {
+  flex: 1 0 250px;
+  margin: 10px;
+  padding: 10px;
+  border: solid black 3px;
+  border-radius: 10px;
+}
 
-
-
+.name {
+  background-color: black;
+  color: white;
+  margin: -10px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 

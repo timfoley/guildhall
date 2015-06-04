@@ -24,7 +24,7 @@
 
 
         <header>
-          <h1>Welcome to the Guildhall</h1>
+          <h1>General Assembly's Alumni Guilds</h1>
           <nav>
 
           </nav>
@@ -35,7 +35,7 @@
 
         <script id="guilds-template" type="text/x-handlebars-template">
           {{#each guild}}
-            <div class="guild">
+            <div class="guild {{this.id}}">
               <h2 class="name">{{this.name}}</h2>
               <p><strong>Schedule:</strong> {{this.schedule}}</p>
               <p><strong>Captains:</strong> <a href="mailto:{{this.captain1contact}}">{{this.captain1}}</a> <a href="mailto:{{this.captain2contact}}">{{this.captain2}}</a> <a href="mailto:{{this.captain3contact}}">{{this.captain3}}</a> </p>
