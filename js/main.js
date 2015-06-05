@@ -60,9 +60,9 @@ function render( context ){
     }
     i++
   }
-  function() {
-    resizeCard('.guild');
-  }
+  // function() {
+  //   resizeCard('.guild');
+  // }
 }
 
 
