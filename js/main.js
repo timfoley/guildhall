@@ -1,14 +1,19 @@
-$(document).ready(resizeCard);
+$(window).resize( function() {
+  resizeCard('.guild');
+});
 
-$(window).resize(resizeCard);
 
+// function resizeCard() {
+//   $('.guild + .guild').css({
+//     'max-width': $('.guild:first-child').width()
+//     });
+// }
 
-function resizeCard() {
-  $('.guild + .guild').css({
-    'max-width': $('.guild:first-child').width()
+function resizeCard(classSelector) {
+  $(classSelector + ' + ' + classSelector).css({
+    'max-width': $(classSelector + ':first-child').width()
     });
 }
-
 
 
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ZBKNxsXDaNGrP63jYHISp3ckbsxvV0SUwD8VNbllVC4/pubhtml';
@@ -54,6 +59,9 @@ function render( context ){
     } else {
     }
     i++
+  }
+  function() {
+    resizeCard('.guild');
   }
 }
 
