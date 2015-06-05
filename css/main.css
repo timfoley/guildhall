@@ -94,8 +94,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: 'Anonymous Pro'
+}
+
 header {
   padding: 20px;
+}
+
+h1 {
+  font-family: 'Righteous';
+  font-size: 3rem;
 }
 
 .guild-profiles {
@@ -111,9 +120,12 @@ header {
   padding: 10px;
   border: solid black 3px;
   border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 .name {
+  font-family: 'Righteous';
+  font-size: 2rem;
   background-color: black;
   color: white;
   margin: -10px;
