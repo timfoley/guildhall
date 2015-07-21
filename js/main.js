@@ -29,12 +29,10 @@ var tabletop = Tabletop.init({
 function sheetLoad( data, tabletop ){
   console.log( data )
   var guildHall = data.Details.all();
-  var js2 = data.js2meetings.all();
   var dat = data.datMeetings.all();
   var bewd = data.bewdMeetings.all();
-  guildHall[1].meetings = js2;
-  guildHall[2].meetings = dat;
-  guildHall[5].meetings = bewd;
+  guildHall[0].meetings = bewd;
+  guildHall[1].meetings = dat;
 
   //guildHall[0].meetings = data.js1meetings.all()
 
