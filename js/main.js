@@ -31,6 +31,7 @@ function sheetLoad( data, tabletop ){
   var guildHall = data.Details.all();
   var dat = data.datMeetings.all();
   var bewd = data.bewdMeetings.all();
+  //keep in mind that these values change if the spreadsheet changes.
   guildHall[0].meetings = bewd;
   guildHall[1].meetings = dat;
 
